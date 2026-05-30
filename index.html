@@ -41,7 +41,6 @@
             min-height: 100vh;
         }
  
-        /* ─── HEADER NAV ─────────────────────────────── */
         .site-header {
             background: var(--burgundy-dark);
             padding: 0 40px;
@@ -96,14 +95,12 @@
             font-weight: 600;
         }
  
-        /* ─── MAIN CONTAINER ─────────────────────────── */
         .container {
             max-width: 1100px;
             margin: 0 auto;
             padding: 40px 30px 60px;
         }
  
-        /* ─── PAGE SECTIONS ──────────────────────────── */
         .page-section {
             display: none;
             animation: fadeUp 0.5s ease;
@@ -118,8 +115,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
  
-        /* ─── ABOUT PAGE ─────────────────────────────── */
-        /* Hero Banner */
         .hero-banner {
             background: var(--burgundy-dark);
             border-radius: var(--radius);
@@ -179,7 +174,6 @@
             margin-top: 2px;
         }
  
-        /* Profile Row */
         .profile-row {
             display: flex;
             gap: 28px;
@@ -210,18 +204,6 @@
             object-fit: cover;
         }
  
-        .profile-photo-placeholder {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.5rem;
-            color: var(--beige-light);
-            background: linear-gradient(135deg, var(--burgundy), var(--burgundy-light));
-        }
- 
-        /* Info Card */
         .info-card {
             background: var(--white);
             border-radius: var(--radius);
@@ -296,31 +278,6 @@
             transform: translateY(-2px);
         }
  
-        /* Thumbnail Row */
-        .thumb-row {
-            display: flex;
-            gap: 16px;
-            margin-bottom: 28px;
-        }
- 
-        .thumb-circle {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 3px solid var(--white);
-            box-shadow: 0 4px 14px rgba(107, 31, 42, 0.15);
-            background: var(--burgundy);
-            flex-shrink: 0;
-        }
- 
-        .thumb-circle img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
- 
-        /* Social Stats Row */
         .stats-row {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -412,7 +369,6 @@
             letter-spacing: 0.08em;
         }
  
-        /* ─── SECTION TITLES ─────────────────────────── */
         .section-title {
             font-family: 'Playfair Display', serif;
             font-size: 2rem;
@@ -435,7 +391,6 @@
             border-radius: 2px;
         }
  
-        /* ─── EVENTS PAGE ────────────────────────────── */
         .events-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -465,7 +420,6 @@
             display: block;
         }
  
-        /* ─── CERTIFICATES PAGE ──────────────────────── */
         .courses-navigation {
             display: flex;
             justify-content: center;
@@ -609,7 +563,6 @@
             box-shadow: 0 8px 22px rgba(74, 18, 25, 0.35);
         }
  
-        /* ─── CONTACTS PAGE ──────────────────────────── */
         .contacts-container {
             display: flex;
             flex-wrap: wrap;
@@ -763,7 +716,6 @@
             box-shadow: 0 8px 24px rgba(0,0,0,0.25);
         }
  
-        /* ─── MODAL ──────────────────────────────────── */
         .modal {
             display: none;
             position: fixed;
@@ -820,14 +772,12 @@
             to { transform: scale(1); opacity: 1; }
         }
  
-        /* ─── RESPONSIVE ─────────────────────────────── */
         @media (max-width: 768px) {
             .site-header { padding: 0 20px; }
             .nav-tabs { gap: 2px; }
             .nav-tab { padding: 7px 12px; font-size: 0.78rem; }
             .container { padding: 24px 16px 50px; }
             .profile-row { flex-direction: column; }
-            .thumb-row { flex-wrap: wrap; }
             .stats-row { grid-template-columns: 1fr; }
             .events-grid { grid-template-columns: 1fr 1fr; }
             .certificate { flex: 0 0 260px; }
@@ -843,7 +793,6 @@
 </head>
 <body>
  
-    <!-- ── STICKY HEADER NAV ──────────────────────── -->
     <header class="site-header">
         <div class="brand">Анищенко Диана</div>
         <nav class="nav-tabs">
@@ -856,16 +805,13 @@
  
     <div class="container">
  
-        <!-- ══════════════════════════════════════════ -->
-        <!--  ABOUT PAGE                               -->
-        <!-- ══════════════════════════════════════════ -->
+        <!-- ABOUT PAGE -->
         <div id="about-page" class="page-section active">
  
-            <!-- Hero Banner -->
             <div class="hero-banner">
                 <div class="hero-banner-inner">
                     <div class="hero-pattern"></div>
-                    <img src="C:\Users\User\Desktop\портфолио Анищенко\фото\photo_2025-12-01_10-00-50.jpg"
+                    <img src="фото/photo_2025-12-01_10-00-50.jpg"
                          alt="Баннер"
                          style="width:100%;height:100%;object-fit:cover;opacity:0.6;">
                 </div>
@@ -875,15 +821,13 @@
                 </div>
             </div>
  
-            <!-- Profile Row -->
             <div class="profile-row">
                 <div class="profile-photo-wrap">
                     <div class="profile-photo-circle">
-                        <img src="C:\Users\User\Desktop\портфолио Анищенко\фото\photo_2025-12-01_10-00-50.jpg" alt="Фото">
+                        <img src="фото/photo_2025-12-01_10-00-50.jpg" alt="Фото">
                     </div>
                 </div>
  
-                <!-- Main Info Card -->
                 <div class="info-card">
                     <h1>Анищенко Диана Степановна</h1>
                     <p class="subtitle">
@@ -902,7 +846,6 @@
                 </div>
             </div>
  
-            <!-- Stats Row -->
             <div class="stats-row">
                 <div class="stat-card">
                     <h3>Анищенко Диана</h3>
@@ -942,50 +885,46 @@
                 </div>
             </div>
  
-        </div><!-- /about-page -->
+        </div>
  
  
-        <!-- ══════════════════════════════════════════ -->
-        <!--  EVENTS PAGE                              -->
-        <!-- ══════════════════════════════════════════ -->
+        <!-- EVENTS PAGE -->
         <div id="events-page" class="page-section">
             <h2 class="section-title">Мои мероприятия</h2>
  
             <div class="events-grid">
                 <div class="event-card">
-                    <img src="C:\Users\User\Desktop\портфолио Анищенко\мероприятия\photo_1_2025-12-10_08-50-41.jpg" alt="Мероприятие">
+                    <img src="мероприятия/photo_1_2025-12-10_08-50-41.jpg" alt="Мероприятие">
                 </div>
                 <div class="event-card">
-                    <img src="C:\Users\User\Desktop\портфолио Анищенко\мероприятия\photo_9_2025-12-10_08-50-41.jpg" alt="Мероприятие">
+                    <img src="мероприятия/photo_9_2025-12-10_08-50-41.jpg" alt="Мероприятие">
                 </div>
                 <div class="event-card">
-                    <img src="C:\Users\User\Desktop\портфолио Анищенко\мероприятия\photo_8_2025-12-10_08-50-41.jpg" alt="Мероприятие">
+                    <img src="мероприятия/photo_8_2025-12-10_08-50-41.jpg" alt="Мероприятие">
                 </div>
                 <div class="event-card">
-                    <img src="C:\Users\User\Desktop\портфолио Анищенко\мероприятия\photo_7_2025-12-10_08-50-41.jpg" alt="Мероприятие">
+                    <img src="мероприятия/photo_7_2025-12-10_08-50-41.jpg" alt="Мероприятие">
                 </div>
                 <div class="event-card">
-                    <img src="C:\Users\User\Desktop\портфолио Анищенко\мероприятия\photo_4_2025-12-10_08-50-41.jpg" alt="Мероприятие">
+                    <img src="мероприятия/photo_4_2025-12-10_08-50-41.jpg" alt="Мероприятие">
                 </div>
                 <div class="event-card">
-                    <img src="c:\Users\User\Desktop\портфолио Анищенко\мероприятия\photo_6_2025-12-10_08-50-41.jpg" alt="Мероприятие">
+                    <img src="мероприятия/photo_6_2025-12-10_08-50-41.jpg" alt="Мероприятие">
                 </div>
                 <div class="event-card">
-                    <img src="C:\Users\User\Desktop\портфолио Анищенко\мероприятия\photo_5_2025-12-10_08-50-41.jpg" alt="Мероприятие">
+                    <img src="мероприятия/photo_5_2025-12-10_08-50-41.jpg" alt="Мероприятие">
                 </div>
                 <div class="event-card">
-                    <img src="C:\Users\User\Desktop\портфолио Анищенко\мероприятия\photo_2_2025-12-10_08-50-41.jpg" alt="Мероприятие">
+                    <img src="мероприятия/photo_2_2025-12-10_08-50-41.jpg" alt="Мероприятие">
                 </div>
                 <div class="event-card">
-                    <img src="C:\Users\User\Desktop\портфолио Анищенко\мероприятия\photo_3_2025-12-10_08-50-41.jpg" alt="Мероприятие">
+                    <img src="мероприятия/photo_3_2025-12-10_08-50-41.jpg" alt="Мероприятие">
                 </div>
             </div>
-        </div><!-- /events-page -->
+        </div>
  
  
-        <!-- ══════════════════════════════════════════ -->
-        <!--  CERTIFICATES PAGE                        -->
-        <!-- ══════════════════════════════════════════ -->
+        <!-- CERTIFICATES PAGE -->
         <div id="certificates-page" class="page-section">
             <h2 class="section-title">Мои грамоты и сертификаты</h2>
  
@@ -1000,20 +939,20 @@
                 <div id="first-course" class="course-section active">
                     <h3>Грамоты и сертификаты 1 курса (2023–2024)</h3>
                     <div class="certificates-slider" id="firstCertificatesSlider">
-                        <div class="certificate" data-image-large="C:\Users\User\Desktop\портфолио Анищенко\грамоты 1 курс\photo_1_2025-12-11_09-04-32.jpg">
-                            <img src="C:\Users\User\Desktop\портфолио Анищенко\грамоты 1 курс\photo_1_2025-12-11_09-04-32.jpg" alt="Грамота">
+                        <div class="certificate" data-image-large="грамоты 1 курс/photo_1_2025-12-11_09-04-32.jpg">
+                            <img src="грамоты 1 курс/photo_1_2025-12-11_09-04-32.jpg" alt="Грамота">
                         </div>
-                        <div class="certificate" data-image-large="C:\Users\User\Desktop\портфолио Анищенко\грамоты 2 курс\photo_2_2025-05-24_14-23-34.jpg">
-                            <img src="C:\Users\User\Desktop\портфолио Анищенко\грамоты 2 курс\photo_2_2025-05-24_14-23-34.jpg" alt="Грамота">
+                        <div class="certificate" data-image-large="грамоты 1 курс/photo_2_2025-12-11_09-04-32.jpg">
+                            <img src="грамоты 1 курс/photo_2_2025-12-11_09-04-32.jpg" alt="Грамота">
                         </div>
-                        <div class="certificate" data-image-large="C:\Users\User\Desktop\портфолио Анищенко\грамоты 1 курс\photo_3_2025-12-11_09-04-32.jpg">
-                            <img src="C:\Users\User\Desktop\портфолио Анищенко\грамоты 1 курс\photo_3_2025-12-11_09-04-32.jpg" alt="Грамота">
+                        <div class="certificate" data-image-large="грамоты 1 курс/photo_3_2025-12-11_09-04-32.jpg">
+                            <img src="грамоты 1 курс/photo_3_2025-12-11_09-04-32.jpg" alt="Грамота">
                         </div>
-                        <div class="certificate" data-image-large="C:\Users\User\Desktop\портфолио Анищенко\грамоты 1 курс\photo_4_2025-12-11_09-04-32.jpg">
-                            <img src="C:\Users\User\Desktop\портфолио Анищенко\грамоты 1 курс\photo_4_2025-12-11_09-04-32.jpg" alt="Грамота">
+                        <div class="certificate" data-image-large="грамоты 1 курс/photo_4_2025-12-11_09-04-32.jpg">
+                            <img src="грамоты 1 курс/photo_4_2025-12-11_09-04-32.jpg" alt="Грамота">
                         </div>
-                        <div class="certificate" data-image-large="C:\Users\User\Desktop\портфолио Анищенко\грамоты 1 курс\photo_5_2025-12-11_09-04-32.jpg">
-                            <img src="C:\Users\User\Desktop\портфолио Анищенко\грамоты 1 курс\photo_5_2025-12-11_09-04-32.jpg" alt="Грамота">
+                        <div class="certificate" data-image-large="грамоты 1 курс/photo_5_2025-12-11_09-04-32.jpg">
+                            <img src="грамоты 1 курс/photo_5_2025-12-11_09-04-32.jpg" alt="Грамота">
                         </div>
                     </div>
                     <div class="slider-indicators" id="firstIndicators"></div>
@@ -1027,23 +966,23 @@
                 <div id="second-course" class="course-section">
                     <h3>Грамоты и сертификаты 2 курса (2024–2025)</h3>
                     <div class="certificates-slider" id="secondCertificatesSlider">
-                        <div class="certificate" data-image-large="C:\Users\User\Desktop\портфолио Анищенко\грамоты 2 курс\photo_1_2025-05-24_14-23-34.jpg">
-                            <img src="C:\Users\User\Desktop\портфолио Анищенко\грамоты 2 курс\photo_1_2025-05-24_14-23-34.jpg" alt="Грамота">
+                        <div class="certificate" data-image-large="грамоты 2 курс/photo_1_2025-05-24_14-23-34.jpg">
+                            <img src="грамоты 2 курс/photo_1_2025-05-24_14-23-34.jpg" alt="Грамота">
                         </div>
-                        <div class="certificate" data-image-large="C:\Users\User\Desktop\портфолио Анищенко\грамоты 2 курс\photo_2_2025-05-24_14-23-34.jpg">
-                            <img src="C:\Users\User\Desktop\портфолио Анищенко\грамоты 2 курс\photo_2_2025-05-24_14-23-34.jpg" alt="Грамота">
+                        <div class="certificate" data-image-large="грамоты 2 курс/photo_2_2025-05-24_14-23-34.jpg">
+                            <img src="грамоты 2 курс/photo_2_2025-05-24_14-23-34.jpg" alt="Грамота">
                         </div>
-                        <div class="certificate" data-image-large="C:\Users\User\Desktop\портфолио Анищенко\грамоты 2 курс\photo_6_2025-05-24_14-23-34.jpg">
-                            <img src="C:\Users\User\Desktop\портфолио Анищенко\грамоты 2 курс\photo_6_2025-05-24_14-23-34.jpg" alt="Грамота">
+                        <div class="certificate" data-image-large="грамоты 2 курс/photo_6_2025-05-24_14-23-34.jpg">
+                            <img src="грамоты 2 курс/photo_6_2025-05-24_14-23-34.jpg" alt="Грамота">
                         </div>
-                        <div class="certificate" data-image-large="C:\Users\User\Desktop\портфолио Анищенко\грамоты 2 курс\photo_11_2025-05-24_14-23-34.jpg">
-                            <img src="C:\Users\User\Desktop\портфолио Анищенко\грамоты 2 курс\photo_11_2025-05-24_14-23-34.jpg" alt="Грамота">
+                        <div class="certificate" data-image-large="грамоты 2 курс/photo_11_2025-05-24_14-23-34.jpg">
+                            <img src="грамоты 2 курс/photo_11_2025-05-24_14-23-34.jpg" alt="Грамота">
                         </div>
-                        <div class="certificate" data-image-large="C:\Users\User\Desktop\портфолио Анищенко\грамоты 2 курс\photo_12_2025-05-24_14-23-34.jpg">
-                            <img src="C:\Users\User\Desktop\портфолио Анищенко\грамоты 2 курс\photo_12_2025-05-24_14-23-34.jpg" alt="Грамота">
+                        <div class="certificate" data-image-large="грамоты 2 курс/photo_12_2025-05-24_14-23-34.jpg">
+                            <img src="грамоты 2 курс/photo_12_2025-05-24_14-23-34.jpg" alt="Грамота">
                         </div>
-                        <div class="certificate" data-image-large="C:\Users\User\Desktop\портфолио Анищенко\грамоты 2 курс\photo_30_2025-05-24_14-23-34.jpg">
-                            <img src="C:\Users\User\Desktop\портфолио Анищенко\грамоты 2 курс\photo_30_2025-05-24_14-23-34.jpg" alt="Грамота">
+                        <div class="certificate" data-image-large="грамоты 2 курс/photo_30_2025-05-24_14-23-34.jpg">
+                            <img src="грамоты 2 курс/photo_30_2025-05-24_14-23-34.jpg" alt="Грамота">
                         </div>
                     </div>
                     <div class="slider-indicators" id="secondIndicators"></div>
@@ -1057,39 +996,36 @@
                 <div id="third-course" class="course-section">
                     <h3>Грамоты и сертификаты 3 курса (2025–2026)</h3>
                     <div class="certificates-slider" id="thirdCertificatesSlider">
-                        <div class="certificate" data-image-large="C:\Users\User\Desktop\портфолио Анищенко\грамоты 3 курс\photo_1_2025-12-10_12-53-55.jpg">
-                            <img src="C:\Users\User\Desktop\портфолио Анищенко\грамоты 3 курс\photo_1_2025-12-10_12-53-55.jpg" alt="Грамота">
+                        <div class="certificate" data-image-large="грамоты 3 курс/photo_1_2025-12-10_12-53-55.jpg">
+                            <img src="грамоты 3 курс/photo_1_2025-12-10_12-53-55.jpg" alt="Грамота">
                         </div>
-                        <div class="certificate" data-image-large="C:\Users\User\Desktop\портфолио Анищенко\грамоты 3 курс\photo_2_2025-12-10_12-53-55.jpg">
-                            <img src="C:\Users\User\Desktop\портфолио Анищенко\грамоты 3 курс\photo_2_2025-12-10_12-53-55.jpg" alt="Грамота">
+                        <div class="certificate" data-image-large="грамоты 3 курс/photo_2_2025-12-10_12-53-55.jpg">
+                            <img src="грамоты 3 курс/photo_2_2025-12-10_12-53-55.jpg" alt="Грамота">
                         </div>
-                        <div class="certificate" data-image-large="C:\Users\User\Desktop\портфолио Анищенко\грамоты 3 курс\photo_3_2025-12-10_12-53-55.jpg">
-                            <img src="C:\Users\User\Desktop\портфолио Анищенко\грамоты 3 курс\photo_3_2025-12-10_12-53-55.jpg" alt="Грамота">
+                        <div class="certificate" data-image-large="грамоты 3 курс/photo_3_2025-12-10_12-53-55.jpg">
+                            <img src="грамоты 3 курс/photo_3_2025-12-10_12-53-55.jpg" alt="Грамота">
                         </div>
-                        <div class="certificate" data-image-large="C:\Users\User\Desktop\портфолио Анищенко\грамоты 3 курс\photo_4_2025-12-10_12-53-55.jpg">
-                            <img src="C:\Users\User\Desktop\портфолио Анищенко\грамоты 3 курс\photo_4_2025-12-10_12-53-55.jpg" alt="Грамота">
+                        <div class="certificate" data-image-large="грамоты 3 курс/photo_4_2025-12-10_12-53-55.jpg">
+                            <img src="грамоты 3 курс/photo_4_2025-12-10_12-53-55.jpg" alt="Грамота">
                         </div>
-                        <div class="certificate" data-image-large="C:\Users\User\Desktop\портфолио Анищенко\грамоты 3 курс\photo_5_2025-12-10_12-53-55.jpg">
-                            <img src="C:\Users\User\Desktop\портфолио Анищенко\грамоты 3 курс\photo_5_2025-12-10_12-53-55.jpg" alt="Грамота">
+                        <div class="certificate" data-image-large="грамоты 3 курс/photo_5_2025-12-10_12-53-55.jpg">
+                            <img src="грамоты 3 курс/photo_5_2025-12-10_12-53-55.jpg" alt="Грамота">
                         </div>
-                        <div class="certificate" data-image-large="C:\Users\User\Desktop\портфолио Анищенко\грамоты 3 курс\photo_6_2025-12-10_12-53-55.jpg">
-                            <img src="C:\Users\User\Desktop\портфолио Анищенко\грамоты 3 курс\photo_6_2025-12-10_12-53-55.jpg" alt="Грамота">
+                        <div class="certificate" data-image-large="грамоты 3 курс/photo_6_2025-12-10_12-53-55.jpg">
+                            <img src="грамоты 3 курс/photo_6_2025-12-10_12-53-55.jpg" alt="Грамота">
                         </div>
-                        <div class="certificate" data-image-large="C:\Users\User\Desktop\портфолио Анищенко\грамоты 3 курс\photo_7_2025-12-10_12-53-55.jpg">
-                            <img src="C:\Users\User\Desktop\портфолио Анищенко\грамоты 3 курс\photo_7_2025-12-10_12-53-55.jpg" alt="Грамота">
+                        <div class="certificate" data-image-large="грамоты 3 курс/photo_7_2025-12-10_12-53-55.jpg">
+                            <img src="грамоты 3 курс/photo_7_2025-12-10_12-53-55.jpg" alt="Грамота">
                         </div>
-                      <div class="certificate" data-image-large="C:\Users\User\Desktop\портфолио Анищенко\грамоты 3 курс\photo_2026-05-29_17-33-53.jpg">
-                             <img src="C:\Users\User\Desktop\портфолио Анищенко\грамоты 3 курс\photo_2026-05-29_17-33-53.jpg" alt="Грамота">
-                      </div>
-                        <div class="certificate" data-image-large="C:\Users\User\Desktop\портфолио Анищенко\грамоты 3 курс\photo_2026-05-29_17-34-09.jpg">
-                             <img src="C:\Users\User\Desktop\портфолио Анищенко\грамоты 3 курс\photo_2026-05-29_17-34-09.jpg" alt="Грамота">
-                       </div>
-                          <div class="certificate" data-image-large="C:\Users\User\Desktop\портфолио Анищенко\грамоты 3 курс\photo_2026-05-29_17-34-12.jpg">
-                              <img src="C:\Users\User\Desktop\портфолио Анищенко\грамоты 3 курс\photo_2026-05-29_17-34-12.jpg" alt="Грамота">
-                       </div>
-                         </div>
-
-
+                        <div class="certificate" data-image-large="грамоты 3 курс/photo_2026-05-29_17-33-53.jpg">
+                            <img src="грамоты 3 курс/photo_2026-05-29_17-33-53.jpg" alt="Грамота">
+                        </div>
+                        <div class="certificate" data-image-large="грамоты 3 курс/photo_2026-05-29_17-34-09.jpg">
+                            <img src="грамоты 3 курс/photo_2026-05-29_17-34-09.jpg" alt="Грамота">
+                        </div>
+                        <div class="certificate" data-image-large="грамоты 3 курс/photo_2026-05-29_17-34-12.jpg">
+                            <img src="грамоты 3 курс/photo_2026-05-29_17-34-12.jpg" alt="Грамота">
+                        </div>
                     </div>
                     <div class="slider-indicators" id="thirdIndicators"></div>
                     <div class="slider-controls">
@@ -1098,12 +1034,10 @@
                     </div>
                 </div>
             </div>
-        </div><!-- /certificates-page -->
+        </div>
  
  
-        <!-- ══════════════════════════════════════════ -->
-        <!--  CONTACTS PAGE                            -->
-        <!-- ══════════════════════════════════════════ -->
+        <!-- CONTACTS PAGE -->
         <div id="contacts-page" class="page-section">
             <h2 class="section-title">Мои контакты</h2>
  
@@ -1143,26 +1077,26 @@
  
                 <div class="contact-form">
                     <h3>Связаться со мной</h3>
-                    <form id="contactForm">
+                    <div id="contactForm">
                         <div class="form-group">
                             <label for="name">Ваше имя</label>
-                            <input type="text" id="name" name="name" placeholder="Введите имя" required>
+                            <input type="text" id="name" name="name" placeholder="Введите имя">
                         </div>
                         <div class="form-group">
                             <label for="email">Ваш email</label>
-                            <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                            <input type="email" id="email" name="email" placeholder="email@example.com">
                         </div>
                         <div class="form-group">
                             <label for="message">Сообщение</label>
-                            <textarea id="message" name="message" placeholder="Напишите ваше сообщение..." required></textarea>
+                            <textarea id="message" name="message" placeholder="Напишите ваше сообщение..."></textarea>
                         </div>
-                        <button type="submit" class="submit-btn">Отправить сообщение</button>
-                    </form>
+                        <button type="button" class="submit-btn" onclick="submitForm()">Отправить сообщение</button>
+                    </div>
                 </div>
             </div>
-        </div><!-- /contacts-page -->
+        </div>
  
-    </div><!-- /container -->
+    </div>
  
     <!-- Modal -->
     <div id="imageModal" class="modal">
@@ -1173,7 +1107,6 @@
     </div>
  
     <script>
-        // ── Navigation ────────────────────────────────
         function showPage(pageName, e) {
             if (e) e.preventDefault();
             document.querySelectorAll('.page-section').forEach(p => p.classList.remove('active'));
@@ -1183,7 +1116,6 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
  
-        // ── Course Switcher ───────────────────────────
         function showCourse(course, e) {
             document.querySelectorAll('.course-section').forEach(s => s.classList.remove('active'));
             document.getElementById(course + '-course').classList.add('active');
@@ -1194,7 +1126,6 @@
             updateIndicators(course + 'Indicators', 0);
         }
  
-        // ── Slider ────────────────────────────────────
         function scrollSlider(sliderId, offset, indicatorsId) {
             const slider = document.getElementById(sliderId);
             if (slider) {
@@ -1247,7 +1178,6 @@
             updateIndicators(indicatorsId, activeIndex);
         }
  
-        // ── Modal ─────────────────────────────────────
         function openModal(src) {
             const modal = document.getElementById('imageModal');
             document.getElementById('modalImage').src = src;
@@ -1260,6 +1190,20 @@
             document.body.style.overflow = '';
         }
  
+        function submitForm() {
+            const n = document.getElementById('name').value;
+            const em = document.getElementById('email').value;
+            const m = document.getElementById('message').value;
+            if (n && em && m) {
+                alert('Сообщение отправлено! Я свяжусь с вами в ближайшее время.');
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('message').value = '';
+            } else {
+                alert('Пожалуйста, заполните все поля.');
+            }
+        }
+ 
         window.addEventListener('click', e => {
             if (e.target === document.getElementById('imageModal')) closeModal();
         });
@@ -1268,36 +1212,15 @@
             if (e.key === 'Escape') closeModal();
         });
  
-        // ── Init ──────────────────────────────────────
         document.addEventListener('DOMContentLoaded', () => {
-            // Certificate click
             document.querySelectorAll('.certificate').forEach(cert => {
                 cert.addEventListener('click', () => openModal(cert.dataset.imageLarge));
             });
  
-            // Event card click
             document.querySelectorAll('.event-card img').forEach(img => {
                 img.addEventListener('click', () => openModal(img.src));
             });
  
-            // Contact form
-            const form = document.getElementById('contactForm');
-            if (form) {
-                form.addEventListener('submit', e => {
-                    e.preventDefault();
-                    const n = document.getElementById('name').value;
-                    const em = document.getElementById('email').value;
-                    const m = document.getElementById('message').value;
-                    if (n && em && m) {
-                        alert('Сообщение отправлено! Я свяжусь с вами в ближайшее время.');
-                        form.reset();
-                    } else {
-                        alert('Пожалуйста, заполните все поля.');
-                    }
-                });
-            }
- 
-            // Sliders
             initSliderIndicators('firstCertificatesSlider', 'firstIndicators');
             initSliderIndicators('secondCertificatesSlider', 'secondIndicators');
             initSliderIndicators('thirdCertificatesSlider', 'thirdIndicators');
@@ -1314,4 +1237,3 @@
     </script>
 </body>
 </html>
- 
